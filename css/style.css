@@ -1,0 +1,225 @@
+:root {
+    --color1: #21c063;  /*verde*/
+    --color2: #f4f4f4;  /*gris*/
+    --color3: #323232;  /*negro*/
+    --color4: #616783;  /*grisItems*/
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Rubik', sans-serif;
+    color: var(--color3);
+}
+
+/* ---------- MENU BUSQUEDA LOGIN ----------*/
+
+.menuBusquedaLogin{
+    color: var(--color3);
+    font-size: 14px;
+    font-weight: 500;
+    }
+    
+.menuBusquedaLogin a {
+    text-decoration: none;
+    color: var(--color3);
+}
+.menuBusquedaLogin a:hover {
+    color: var(--color1);
+}
+
+.cestaDeCompras i {
+    color: var(--color1);
+}
+
+.cestaDeCompras{
+    border-radius: 20px;
+}
+
+.cestaDeCompras i:hover{
+    color: var(--color4);
+    border-radius: 20px;
+}
+
+.cantidadItems{
+    position: absolute;
+    color: #fff; 
+    background: #000; 
+    border-radius: 50%;
+    right: 5px;
+    margin: 0;
+}
+
+/* ---------- MENU PRINCIPAL ----------*/
+
+.menuPrincipal {
+    background-color: var(--color1); 
+    max-height: auto;
+}
+
+.menuPrincipal ul {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+.menuPrincipal a {
+    color: white;
+    font-weight: 500;
+    font-size: 12px;
+    width: 200px;
+    padding: 10px;
+    border-radius: 5px;
+    display: inline-block;
+}
+.menuPrincipal a:hover {
+    color: var(--color4);
+    background-color: white;
+    transition: 0.3s;
+}
+
+.menuPrincipal a.active {
+    color: var(--color1);
+    background-image: url('../img/borde-promocion.png') !important;
+    background-size:  cover, auto;
+    background-repeat: no-repeat;  
+}
+.menuPrincipal a.active:hover {
+    color: var(--color4);
+}
+
+/* ---------- BANNER ----------*/
+
+.banner {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+    
+
+/* ---------- CARD ITEM ----------*/
+
+.tituloSeccion{
+    font-size: 20px;
+    font-weight: 700;
+    position: relative;
+    display: inline-block;
+}
+
+.tituloSeccion::before{
+    content:'';
+    position: absolute;
+    width: 50px;
+    height: 4px;
+    background-color: var(--color1);
+    bottom: -5px;
+}
+
+.btnAgregar{
+ background-color: var(--color1);
+ color:white;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ border-radius: 20px;
+}
+
+.btnAgregar:hover{
+ color:var(--color3);
+}
+
+.btnVerTodas{
+    border: 2px solid var(--color1);
+    color: var(--color1);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    width: 10rem;
+    max-height: 40px;
+    font-weight: 700;
+}
+
+.btnVerTodas:hover{
+    color: var(--color4);
+}
+
+.itemCard {
+    position: relative;
+}
+
+.tituloItem {
+    color: var(--color3);
+}
+.textItem{
+    color: var(--color4);
+}
+
+.tagCard{
+    position: absolute;
+    width: auto;
+    height: 50px;
+    border-radius: 5px;
+    color: var(--color4);
+    background-color: var(--color2);
+    top: 15px;
+    left: 15px;
+    padding:10px;
+    font-size: 14px;
+    font-weight: 500;
+    text-align: center;
+    line-height: 1em;
+}
+
+.contenedorItem{
+    border-radius: 6px;
+    box-shadow: 0 0 8px -2px rgba(0, 0, 0, .4);
+}
+
+.contenedorItem img{
+    margin-top: 20px;
+}
+
+.codigoItem {
+    width: 35%;
+    max-height: 40px;
+    border: 1px solid var(--color1);
+    border-radius: 20px;
+    padding: 5px auto; 
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    font-weight: 700;
+    font-size: 14px;
+}
+.infoItem .agregarItem {
+    width: 60%;
+    max-height: 40px;
+    border: 1px solid var(--color1);
+    border-radius: 20px;
+}
+
+.agregarItem a{
+    text-decoration: none;
+    color: var(--color4);
+    font-size: 12px;
+}
+.agregarItem a:hover{
+    color: var(--color1);
+    font-size: 12px;
+}
+.cantidadItem{
+   margin-top: 11px;
+   display: flex;
+   justify-content: center;
+   align-items: center; 
+   font-weight: 700;
+   font-size: 16px;
+}
+
+
+
