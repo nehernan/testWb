@@ -1,11 +1,11 @@
 :root {
-    --color1: #21c063;  /*verde*/
-    --color2: #f4f4f4;  /*gris*/
-    --color3: #323232;  /*negro*/
-    --color4: #616783;  /*grisItems*/
+    --verdePrimario: #21c063;  /*verde*/
+    --grisPrimario: #f4f4f4;  /*gris*/
+    --negroPrimario: #323232;  /*negro*/
+    --grisItemPrimario: #616783;  /*grisItems*/
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -13,41 +13,41 @@
 
 body {
     font-family: 'Rubik', sans-serif;
-    color: var(--color3);
+    color: var(--negroPrimario);
 }
 
 /* ---------- MENU BUSQUEDA LOGIN ----------*/
 
-.menuBusquedaLogin{
-    color: var(--color3);
+.menuBusquedaLogin {
+    color: var(--negroPrimario);
     font-size: 14px;
     font-weight: 500;
-    }
+}
     
 .menuBusquedaLogin a {
     text-decoration: none;
-    color: var(--color3);
+    color: var(--negroPrimario);
 }
 .menuBusquedaLogin a:hover {
-    color: var(--color1);
+    color: var(--verdePrimario);
 }
 
 .cestaDeCompras i {
-    color: var(--color1);
+    color: var(--verdePrimario);
 }
 
-.cestaDeCompras{
+.cestaDeCompras {
     border-radius: 20px;
     position: relative;
 }
 
-.cestaDeCompras i:hover{
-    color: var(--color4);
+.cestaDeCompras i:hover {
+    color: var(--grisItemPrimario);
     border-radius: 20px;
     
 }
 
-.cantidadItems{
+.cantidadItems {
     position: absolute;
     color: #fff; 
     background: #000; 
@@ -60,7 +60,7 @@ body {
 /* ---------- MENU PRINCIPAL ----------*/
 
 .menuPrincipal {
-    background-color: var(--color1); 
+    background-color: var(--verdePrimario); 
     max-height: auto;
 }
 
@@ -80,20 +80,31 @@ body {
     display: inline-block;
 }
 .menuPrincipal a:hover {
-    color: var(--color4);
+    color: var(--grisItemPrimario);
     background-color: white;
     transition: 0.3s;
 }
 
 .menuPrincipal a.active {
-    color: var(--color1);
+    color: var(--verdePrimario);
     background-image: url('../img/borde-promocion.png') !important;
     background-size:  cover, auto;
     background-repeat: no-repeat;  
 }
 .menuPrincipal a.active:hover {
-    color: var(--color4);
+    color: var(--grisItemPrimario);
 }
+
+.logoWabiMenu {
+    width: 50px;
+    height: auto;
+}
+
+.iconMenuResponsive {
+    color: #fff; 
+    font-size: 30px;
+}
+
 
 /* ---------- BANNER ----------*/
 
@@ -101,43 +112,50 @@ body {
     width: 100%;
     margin: 0;
     padding: 0;
+    position: relative;
 }
-    
+
+.bannerResponsive {
+    position: absolute;
+    height: 100%;
+    width: auto;
+    display: none;
+} 
 
 /* ---------- CARD ITEM ----------*/
 
-.tituloSeccion{
+.tituloSeccion {
     font-size: 20px;
     font-weight: 700;
     position: relative;
     display: inline-block;
 }
 
-.tituloSeccion::before{
-    content:'';
+.tituloSeccion::before {
+    content: '';
     position: absolute;
     width: 50px;
     height: 4px;
-    background-color: var(--color1);
+    background-color: var(--verdePrimario);
     bottom: -5px;
 }
 
-.btnAgregar{
- background-color: var(--color1);
- color:white;
- display: flex;
- align-items: center;
- justify-content: center;
- border-radius: 20px;
+.btnAgregar {
+    background-color: var(--verdePrimario);
+    color:white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
 }
 
-.btnAgregar:hover{
- color:var(--color3);
+.btnAgregar:hover {
+    color:var(--negroPrimario);
 }
 
-.btnVerTodas{
-    border: 2px solid var(--color1);
-    color: var(--color1);
+.btnVerTodas {
+    border: 2px solid var(--verdePrimario);
+    color: var(--verdePrimario);
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -147,8 +165,8 @@ body {
     font-weight: 700;
 }
 
-.btnVerTodas:hover{
-    color: var(--color4);
+.btnVerTodas:hover {
+    color: var(--grisItemPrimario);
 }
 
 .itemCard {
@@ -156,20 +174,20 @@ body {
 }
 
 .tituloItem {
-    color: var(--color3);
+    color: var(--negroPrimario);
 }
-.textItem{
-    color: var(--color4);
+.textItem {
+    color: var(--grisItemPrimario);
 }
 
-.tagCard{
+.tagCard {
     position: absolute;
     width: auto;
     height: 50px;
     border-radius: 5px;
-    color: var(--color4);
-    background-color: var(--color2);
-    top: 15px;
+    color: var(--grisItemPrimario);
+    background-color: var(--grisPrimario);
+    top: 15px; 
     left: 15px;
     padding:10px;
     font-size: 14px;
@@ -178,19 +196,19 @@ body {
     line-height: 1em;
 }
 
-.contenedorItem{
+.contenedorItem {
     border-radius: 6px;
     box-shadow: 0 0 8px -2px rgba(0, 0, 0, .4);
 }
 
-.contenedorItem img{
+.contenedorItem img {
     margin-top: 20px;
 }
 
 .codigoItem {
     width: 35%;
     max-height: 40px;
-    border: 1px solid var(--color1);
+    border: 1px solid var(--verdePrimario);
     border-radius: 20px;
     padding: 5px auto; 
     display: flex;
@@ -198,24 +216,27 @@ body {
     align-items: center; 
     font-weight: 700;
     font-size: 14px;
-}
+} 
+
 .infoItem .agregarItem {
     width: 60%;
     max-height: 40px;
-    border: 1px solid var(--color1);
+    border: 1px solid var(--verdePrimario);
     border-radius: 20px;
 }
 
-.agregarItem a{
+.agregarItem a {
     text-decoration: none;
-    color: var(--color4);
+    color: var(--grisItemPrimario);
     font-size: 12px;
 }
-.agregarItem a:hover{
-    color: var(--color1);
+
+.agregarItem a:hover {
+    color: var(--verdePrimario);
     font-size: 12px;
 }
-.cantidadItem{
+
+.cantidadItem {
    margin-top: 11px;
    display: flex;
    justify-content: center;
@@ -224,5 +245,11 @@ body {
    font-size: 16px;
 }
 
-
-
+@media only screen and (max-width: 600px) {
+    .banner {
+      display: none;
+    }
+    .bannerResponsive {
+      display: contents;
+    }
+  }
