@@ -38,11 +38,13 @@ body {
 
 .cestaDeCompras{
     border-radius: 20px;
+    position: relative;
 }
 
 .cestaDeCompras i:hover{
     color: var(--color4);
     border-radius: 20px;
+    
 }
 
 .cantidadItems{
@@ -50,7 +52,8 @@ body {
     color: #fff; 
     background: #000; 
     border-radius: 50%;
-    right: 5px;
+    left: 25px;
+    bottom: 30px;
     margin: 0;
 }
 
