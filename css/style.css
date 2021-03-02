@@ -65,17 +65,21 @@ body {
     max-height: auto;
 }
 
+.menuPrincipal ul {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
 .menuPrincipal a {
     color: white;
     font-weight: 500;
     font-size: 12px;
-    padding-left: 20px !important;
-    padding-right: 20px !important;
+    width: 200px;
+    padding: 10px;
     border-radius: 5px;
     display: inline-block;
-    width: 200px;
 }
-
 .menuPrincipal a:hover {
     color: var(--grisItemPrimario);
     background-color: white;
@@ -88,7 +92,6 @@ body {
     background-size:  cover, auto;
     background-repeat: no-repeat;  
 }
-
 .menuPrincipal a.active:hover {
     color: var(--grisItemPrimario);
 }
@@ -107,7 +110,10 @@ body {
 /* ---------- BANNER ----------*/
 
 .banner {
+<<<<<<< HEAD
     position: relative;
+=======
+>>>>>>> e82b916df51dd7890015ea0416ea33f61367dab9
     background-color: #e7f3fb;
     background: url('../img/wabi.png');
     min-height: 250px;
@@ -116,30 +122,18 @@ body {
     background-repeat: no-repeat;
 }
 
+<<<<<<< HEAD
 .bannerTexto {
+=======
+}
+
+.bannerResponsive {
+>>>>>>> e82b916df51dd7890015ea0416ea33f61367dab9
     position: absolute;
     height: 100%;
     width: auto;
-    top: 10%;
-    color: var(--negroPrimario);
-    font-size: 2rem;
-    line-height: 3rem;
+    display: none;
 } 
-
-.btnDescarga {
-    background-color:red;
-    color: #fff;
-    border-radius: 25px;
-    width: 250px;
-    height: 45px;
-    font-size: 16px;  
-}
-
-.btnDescarga:hover {
-    background-color:var(--verdePrimario);
-    color: #fff;
-}
-
 
 /* ---------- CARD ITEM ----------*/
 
@@ -265,25 +259,10 @@ body {
 }
 
 @media only screen and (max-width: 600px) {
-    .bannerTexto {
-        position: absolute;
-        height: 100%;
-        width: auto;
-        top: 15%;
-        color: var(--negroPrimario);
-        font-size: 1.5rem;
-        line-height: 2.5rem;
+    .banner {
+      display: none;
     }
-  }
-
-@media only screen and (max-width: 340px) {
-    .bannerTexto {
-        position: absolute;
-        height: 100%;
-        width: auto;
-        top: 25%;
-        color: var(--negroPrimario);
-        font-size: 1rem;
-        line-height: 1.5rem;
+    .bannerResponsive {
+      display: contents;
     }
   }
