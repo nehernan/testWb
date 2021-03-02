@@ -65,6 +65,10 @@ body {
     max-height: auto;
 }
 
+.menuPrincipal li {
+    flex: auto;
+}
+
 .menuPrincipal a {
     color: white;
     font-weight: 500;
@@ -195,6 +199,7 @@ body {
 .tituloItem {
     color: var(--negroPrimario);
 }
+
 .textItem {
     color: var(--grisItemPrimario);
 }
