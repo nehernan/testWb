@@ -267,13 +267,13 @@ body {
 @media only screen and (max-width: 1200px) {
     .menuPrincipal a {
         color: white;
-        font-weight: 400;
+        font-weight: 500;
         font-size: 12px;
-        padding-left: 8px !important;
-        padding-right: 8px !important;
+        padding-left: 3px !important;
+        padding-right: 3px !important;
         border-radius: 5px;
         display: inline-block;
-        width: 160px;
+        width: 150px;
     }
   }
 
