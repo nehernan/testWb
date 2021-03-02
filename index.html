@@ -57,8 +57,8 @@
 
                         <li class="nav-item my-1"><a class="nav-link" href="#"><i class="material-icons">person_outline</i></a></li>                   
                         <li class="nav-item my-1">
-                            <a class="nav-link cestaDeCompras" href="#">
-                                <i class="material-icons ">shopping_cart</i> <span class="badge cantidadItems">0</span>
+                            <a class="nav-link cestaDeCompras" id="cestaDeCompras" href="#">
+                                <i class="material-icons">shopping_cart</i> <span class="badge cantidadItems">0</span>
                             </a>
                         </li>
                     </ul>
@@ -96,7 +96,7 @@
                 <p class="p-2 mb-0">Bajate Wabi y recibí tu bebida <br>
                     <strong>Coca-Cola en 15 minutos</strong>
                 </p>
-                <button class="btn btnDescarga px-2 text-uppercase">Descargá ahora</button>
+                <button class="btn btnDescarga px-2 text-uppercase" id="btnDescarga">Descargá ahora</button>
             </div>
         </div>
     </header>
@@ -107,13 +107,15 @@
                 <p class="tituloSeccion">Productos en promoción</p>
             </div>
             <div class="col d-flex justify-content-end">
-                <button class="btn btnVerTodas" type="button">Ver Todas <i class="material-icons">keyboard_arrow_right</i></button>
+                <button class="btn btnVerTodas" id="btnVerTodas" type="button">Ver Todas 
+                    <i class="material-icons">keyboard_arrow_right</i>
+                </button>
             </div>
         </div>
     </section>
 
     <section class="container my-3">
-        <div class="row">
+        <div class="row">                
             <div class="col itemCard my-3 d-flex align-items-center justify-content-center">
                 <div class="card contenedorItem" style="width: 18rem;">
                     <div class="tagCard"><p>Mínimo<br>x 1u</p></div>
@@ -126,9 +128,9 @@
                         <div class="infoItem d-flex justify-content-between mb-2">
                             <div class="codigoItem">CX14U</div>
                             <div class="agregarItem d-flex justify-content-between align-items-center">
-                                <a href="" class="btn btnRestarItem"><i class="material-icons">remove</i></a>  
+                                <a href="" class="btn btnRestarItem" id="btnRestarItem"><i class="material-icons">remove</i></a>  
                                 <p class="cantidadItem">1</p>
-                                <a href="" class="btn btnAgregarItem"><i class="material-icons">add</i></a>
+                                <a href="" class="btn btnAgregarItem" id="btnAgregarItem"><i class="material-icons">add</i></a>
                             </div>
                         </div>
                         <a href="#" class="btn btn-block btnAgregar mt-3">AGREGAR A 
@@ -136,7 +138,7 @@
                         </a>
                     </div> 
                 </div>
-            </div>                 
+            </div>
             <div class="col itemCard my-3 d-flex align-items-center justify-content-center">
                 <div class="card contenedorItem" style="width: 18rem;">
                     <div class="tagCard"><p>Mínimo<br>x 1u</p></div>
@@ -149,9 +151,9 @@
                         <div class="infoItem d-flex justify-content-between mb-2">
                             <div class="codigoItem">CX14U</div>
                             <div class="agregarItem d-flex justify-content-between align-items-center">
-                                <a href="" class="btn btnRestarItem"><i class="material-icons">remove</i></a>  
+                                <a href="" class="btn btnRestarItem" id="btnRestarItem"><i class="material-icons">remove</i></a>  
                                 <p class="cantidadItem">1</p>
-                                <a href="" class="btn btnAgregarItem"><i class="material-icons">add</i></a>
+                                <a href="" class="btn btnAgregarItem" id="btnAgregarItem"><i class="material-icons">add</i></a>
                             </div>
                         </div>
                         <a href="#" class="btn btn-block btnAgregar mt-3">AGREGAR A 
@@ -159,7 +161,7 @@
                         </a>
                     </div> 
                 </div>
-            </div>                 
+            </div>
             <div class="col itemCard my-3 d-flex align-items-center justify-content-center">
                 <div class="card contenedorItem" style="width: 18rem;">
                     <div class="tagCard"><p>Mínimo<br>x 1u</p></div>
@@ -172,9 +174,9 @@
                         <div class="infoItem d-flex justify-content-between mb-2">
                             <div class="codigoItem">CX14U</div>
                             <div class="agregarItem d-flex justify-content-between align-items-center">
-                                <a href="" class="btn btnRestarItem"><i class="material-icons">remove</i></a>  
+                                <a href="" class="btn btnRestarItem" id="btnRestarItem"><i class="material-icons">remove</i></a>  
                                 <p class="cantidadItem">1</p>
-                                <a href="" class="btn btnAgregarItem"><i class="material-icons">add</i></a>
+                                <a href="" class="btn btnAgregarItem" id="btnAgregarItem"><i class="material-icons">add</i></a>
                             </div>
                         </div>
                         <a href="#" class="btn btn-block btnAgregar mt-3">AGREGAR A 
@@ -182,7 +184,7 @@
                         </a>
                     </div> 
                 </div>
-            </div>                 
+            </div>
             <div class="col itemCard my-3 d-flex align-items-center justify-content-center">
                 <div class="card contenedorItem" style="width: 18rem;">
                     <div class="tagCard"><p>Mínimo<br>x 1u</p></div>
@@ -195,9 +197,9 @@
                         <div class="infoItem d-flex justify-content-between mb-2">
                             <div class="codigoItem">CX14U</div>
                             <div class="agregarItem d-flex justify-content-between align-items-center">
-                                <a href="" class="btn btnRestarItem"><i class="material-icons">remove</i></a>  
+                                <a href="" class="btn btnRestarItem" id="btnRestarItem"><i class="material-icons">remove</i></a>  
                                 <p class="cantidadItem">1</p>
-                                <a href="" class="btn btnAgregarItem"><i class="material-icons">add</i></a>
+                                <a href="" class="btn btnAgregarItem" id="btnAgregarItem"><i class="material-icons">add</i></a>
                             </div>
                         </div>
                         <a href="#" class="btn btn-block btnAgregar mt-3">AGREGAR A 
@@ -205,7 +207,8 @@
                         </a>
                     </div> 
                 </div>
-            </div>                 
+            </div>
+
         </div>
     </section>
      
