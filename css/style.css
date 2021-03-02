@@ -192,6 +192,10 @@ body {
     color: var(--grisItemPrimario);
 }
 
+.btnAgregarItem {
+    color: var(--verdePrimario) !important; 
+}
+
 .itemCard {
     position: relative;
 }
