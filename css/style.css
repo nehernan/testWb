@@ -192,10 +192,6 @@ body {
     color: var(--grisItemPrimario);
 }
 
-.btnAgregarItem {
-    color: var(--verdePrimario) !important; 
-}
-
 .itemCard {
     position: relative;
 }
@@ -246,22 +242,29 @@ body {
     font-size: 14px;
 } 
 
-.infoItem .agregarItem {
+.infoItem .grupoAgregarItem {
     width: 60%;
     max-height: 40px;
     border: 1px solid var(--verdePrimario);
     border-radius: 20px;
 }
 
-.agregarItem a {
+.grupoAgregarItem a {
     text-decoration: none;
     color: var(--grisItemPrimario);
     font-size: 12px;
 }
 
-.agregarItem a:hover {
+.grupoAgregarItem a:hover {
     color: var(--verdePrimario);
-    font-size: 12px;
+}
+
+.btnAgregarItem {
+    color: var(--verdePrimario) !important; 
+}
+
+.btnAgregarItem:hover {
+    color: var(--grisItemPrimario) !important; 
 }
 
 .cantidadItem {
