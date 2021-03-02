@@ -28,6 +28,7 @@ body {
     text-decoration: none;
     color: var(--negroPrimario);
 }
+
 .menuBusquedaLogin a:hover {
     color: var(--verdePrimario);
 }
@@ -110,7 +111,7 @@ body {
     width: 100%;
     min-height: 250px;
     background-color: #e7f3fb;
-    background: url(../img/wabi.png);
+    background: url('../img/wabi.png');
     min-height: 35vh;
     background-size: cover;
     background-position: center;
