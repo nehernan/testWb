@@ -108,22 +108,12 @@ body {
 
 .banner {
     position: relative;
-    width: 100%;
-    min-height: 250px;
     background-color: #e7f3fb;
     background: url('../img/wabi.png');
-    min-height: 35vh;
+    min-height: 250px;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-}
-
-.bannerWabi {
-    display: block;
-    margin: auto;
-    width: 100%;
-    max-width: 1920px;
-    min-width: 1000px;
 }
 
 .bannerTexto {
